@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module" defer></script>
+    <script src="canvas.js" type="module" defer></script>
+    <title>Drag and drop training</title>
+</head>
+
+<body>
+
+    <div class="infos bordered">
+        <h2 class="name">Jean Guy Moulfrite</h2>
+    </div>
+    <div class="container">
+        <div id="character-container">
+
+        </div>
+        <div id="inventory" class="inventory">
+            <h3>Backpack</h3>
+            <ul id="backpack" class="items bordered">
+
+
+            </ul>
+            <h3>Inventory</h3>
+            <ul id="character-inventory" class="items bordered">
+
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 
+        Templates 
+    -->
+
+    <!-- Character template -->
+    <template id="character-template">
+        <div id="character-container">
+            <div class="character-image dropzone"></div>
+            <h3 class="character-name"></h3>
+            <ul class="stats-list"></ul>
+        </div>
+
+    </template>
+    <!-- Draggable item template -->
+    <template id="item-template">
+        <li class="item bordered">
+            <div class="item-container" data-value="" data-stats='{"stat": "value"}' draggable="true">
+                <div class="item-name"></div>
+                <div class="item-description hidden"></div>
+            </div>
+        </li>
+    </template>
+    <!-- Inventory item template -->
+    <template id="inventory-template">
+        <li class="item bordered"></li>
+    </template>
+</body>
+
+</html>

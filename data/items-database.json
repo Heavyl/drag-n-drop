@@ -1,0 +1,42 @@
+{
+    "chest": {
+        "name": "Chest",
+        "description": "A curious chest",
+        "value": 1000,
+        "imageURL": "./src/items/chest.png"
+    },
+    "coin": {
+        "name": "Coin",
+        "description": "A golden coin",
+        "value": 1,
+        "imageURL": "./src/items/coin.png"
+    },
+    "flask": {
+        "name": "Flask",
+        "description": "A glass flask. Looks like there's something inside",
+        "value": 100,
+        "imageURL": "./src/items/flask.png"
+    },
+    "gun": {
+        "name": "Gun",
+        "description": "A gun to kill nasty people with",
+        "value": 100,
+        "stats": {
+            "force": 10,
+            "agility": 5
+        },
+        "imageURL": "./src/items/gun.png"
+    },
+    "pipe": {
+        "name": "Pipe",
+        "description": "Smoke weed everyday",
+        "value": 20,
+        "imageURL": "./src/items/pipe.png"
+    },
+    "spyglass": {
+        "name": "Spyglass",
+        "description": "A spyglass to spy on your foe... or friends",
+        "value": 50,
+        "imageURL": "./src/items/spyglass.png"
+    }
+}
